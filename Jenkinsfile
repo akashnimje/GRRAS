@@ -23,6 +23,6 @@ pipeline {
 		stage('slack-notification'){
 		   steps {
 		     
-		     slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#devops', color: 'good', message: 'This is for test', teamDomain: 'student', tokenCredentialId: 'slacktest'
+		     slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'devops-class', color: 'good', message: 'Welcome to Jenkins', notifyCommitters: true, teamDomain: 'GRRAS', tokenCredentialId: '699a073c-76c5-497b-9553-daabdbd536f5'
 		     }}	
 }}
